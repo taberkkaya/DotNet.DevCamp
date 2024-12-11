@@ -7,12 +7,12 @@ namespace first_proj.Controllers;
 public class HomeController : Controller
 {
 
-    public string Index()
+    public IActionResult Index()
     {
-        return "Home/Index";
+        return View();
     }
-    public string Contact()
+    public IActionResult Contact()
     {
-        return "Home/Contact";
+        return View();
     }
 }
