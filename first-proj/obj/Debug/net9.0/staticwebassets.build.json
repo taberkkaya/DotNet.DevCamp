@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mpeeJlQOZ5TkAefMcUHOCd5veMxyWw1REPWAWwnAUsM=",
+  "Hash": "WIxF5oCW1BtU6TCqF7uIupHlqJdSO+tLlNxGyycMI/8=",
   "Source": "first-proj",
   "BasePath": "_content/first-proj",
   "Mode": "Default",
@@ -1443,6 +1443,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_1.png",
+      "SourceId": "first-proj",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\",
+      "BasePath": "_content/first-proj",
+      "RelativePath": "img/course_1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2s97km89nf",
+      "Integrity": "vmY0RTbiLsPHq725rUuKXkCXgOfa2OtDac97G4AqT3c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\course_1.png"
+    },
+    {
+      "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_2.png",
+      "SourceId": "first-proj",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\",
+      "BasePath": "_content/first-proj",
+      "RelativePath": "img/course_2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ryuw72144i",
+      "Integrity": "wyNUHeidsB1lLmNB6OMsmpLv+Xm1OUF2OjXKXXgc01w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\course_2.png"
+    },
+    {
+      "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_3.png",
+      "SourceId": "first-proj",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\",
+      "BasePath": "_content/first-proj",
+      "RelativePath": "img/course_3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a86b1k7l9o",
+      "Integrity": "ShWkTIchbngDthgzshyDNiEyCNU3LxAtwUFE4zR1z0k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\course_3.png"
     },
     {
       "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\js\\site.js",
@@ -3916,6 +3979,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-yF6oBmg2jKyk4w0RSNpZs75JJaDofKoxAVRQEjuak/I="
+        }
+      ]
+    },
+    {
+      "Route": "img/course_1.2s97km89nf.png",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vmY0RTbiLsPHq725rUuKXkCXgOfa2OtDac97G4AqT3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 08:49:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2s97km89nf"
+        },
+        {
+          "Name": "label",
+          "Value": "img/course_1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vmY0RTbiLsPHq725rUuKXkCXgOfa2OtDac97G4AqT3c="
+        }
+      ]
+    },
+    {
+      "Route": "img/course_1.png",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vmY0RTbiLsPHq725rUuKXkCXgOfa2OtDac97G4AqT3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 08:49:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vmY0RTbiLsPHq725rUuKXkCXgOfa2OtDac97G4AqT3c="
+        }
+      ]
+    },
+    {
+      "Route": "img/course_2.png",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wyNUHeidsB1lLmNB6OMsmpLv+Xm1OUF2OjXKXXgc01w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 08:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wyNUHeidsB1lLmNB6OMsmpLv+Xm1OUF2OjXKXXgc01w="
+        }
+      ]
+    },
+    {
+      "Route": "img/course_2.ryuw72144i.png",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wyNUHeidsB1lLmNB6OMsmpLv+Xm1OUF2OjXKXXgc01w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 08:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ryuw72144i"
+        },
+        {
+          "Name": "label",
+          "Value": "img/course_2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wyNUHeidsB1lLmNB6OMsmpLv+Xm1OUF2OjXKXXgc01w="
+        }
+      ]
+    },
+    {
+      "Route": "img/course_3.a86b1k7l9o.png",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4773"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ShWkTIchbngDthgzshyDNiEyCNU3LxAtwUFE4zR1z0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 08:50:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a86b1k7l9o"
+        },
+        {
+          "Name": "label",
+          "Value": "img/course_3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ShWkTIchbngDthgzshyDNiEyCNU3LxAtwUFE4zR1z0k="
+        }
+      ]
+    },
+    {
+      "Route": "img/course_3.png",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4773"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ShWkTIchbngDthgzshyDNiEyCNU3LxAtwUFE4zR1z0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Dec 2024 08:50:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ShWkTIchbngDthgzshyDNiEyCNU3LxAtwUFE4zR1z0k="
         }
       ]
     },

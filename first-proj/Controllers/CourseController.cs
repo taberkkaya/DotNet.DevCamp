@@ -11,11 +11,17 @@ public class CourseController : Controller
         var course = new Course();
         course.Id = 1;
         course.Title = "ASP.NET Core Course";
+        course.Description = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
 
         return View(course);
     }
     public IActionResult List()
     {
-        return View("CourseList");
+        var courses = new List<Course>(){
+            new Course(){ Id = 1, Title = "ASP.NET Core Course",Description = "Lorem ipsum dolor sit amet consectetur adipisicing elit.",Image="course_1.png" },
+            new Course(){ Id = 2, Title = ".NET Core Course",Description = "Lorem ipsum dolor sit amet consectetur adipisicing elit.",Image="course_2.png" },
+            new Course(){ Id = 3, Title = "C# Course",Description = "Lorem ipsum dolor sit amet consectetur adipisicing elit.",Image="course_3.png" },
+        };
+        return View("CourseList", courses);
     }
 }

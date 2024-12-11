@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_1.png",
+      "PackagePath": "staticwebassets\\img\\course_1.png"
+    },
+    {
+      "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_2.png",
+      "PackagePath": "staticwebassets\\img\\course_2.png"
+    },
+    {
+      "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\img\\course_3.png",
+      "PackagePath": "staticwebassets\\img\\course_3.png"
+    },
+    {
       "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
