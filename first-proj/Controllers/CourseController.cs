@@ -12,7 +12,7 @@ public class CourseController : Controller
         course.Id = 1;
         course.Title = "ASP.NET Core Course";
         course.Description = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
-
+        course.Image = "course_1.png";
         return View(course);
     }
     public IActionResult List()
