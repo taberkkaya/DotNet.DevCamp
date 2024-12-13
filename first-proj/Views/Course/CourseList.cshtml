@@ -1,17 +1,6 @@
-@model List<Course>
-  @foreach(var course in Model){
-  <div class="card mb-3" id="course_@course.Id">
-    <div class="row">
-      <div class="col-md-4">
-        <img class="img-fluid rounded-start" src="~/img/@course.Image" alt="" />
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">@course.Title</h5>
-          <p class="card-text">@course.Description</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  }
-</Course>
+@model List<Course> 
+
+@foreach(var course in Model){ 
+
+  @await Html.PartialAsync("_Course",course)
+} 
