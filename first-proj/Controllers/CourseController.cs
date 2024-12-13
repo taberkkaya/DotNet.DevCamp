@@ -15,6 +15,17 @@ public class CourseController : Controller
         course.Image = "course_1.png";
         return View(course);
     }
+
+    public IActionResult Details()
+    {
+        var course = new Course();
+        course.Id = 1;
+        course.Title = "ASP.NET Core Course";
+        course.Description = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+        course.Image = "course_1.png";
+        return View(course);
+    }
+
     public IActionResult List()
     {
         var courses = new List<Course>(){

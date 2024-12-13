@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WIxF5oCW1BtU6TCqF7uIupHlqJdSO+tLlNxGyycMI/8=",
+  "Hash": "X6H0pdlhP8VPXPXnblZx/5qzLFg+jniqUZFGeT0j0Zg=",
   "Source": "first-proj",
   "BasePath": "_content/first-proj",
   "Mode": "Default",
@@ -393,6 +393,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\compressed\\7gyjab12jp-l2sn0ww44o.gz",
+      "SourceId": "first-proj",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/first-proj",
+      "RelativePath": "css/contact#[.{fingerprint=l2sn0ww44o}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\css\\contact.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i2tt486m7b",
+      "Integrity": "arxXrUaCXuJXqmQml8r1clWaePseY/OtCGIraYBKmVw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\css\\contact.css"
     },
     {
       "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\compressed\\88o2ndm32o-j5mq2jizvt.gz",
@@ -1401,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\first-proj.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\css\\contact.css",
+      "SourceId": "first-proj",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\",
+      "BasePath": "_content/first-proj",
+      "RelativePath": "css/contact#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l2sn0ww44o",
+      "Integrity": "3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\contact.css"
     },
     {
       "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\css\\site.css",
@@ -2790,6 +2832,304 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/contact.css",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\compressed\\7gyjab12jp-l2sn0ww44o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.022222222222"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"arxXrUaCXuJXqmQml8r1clWaePseY/OtCGIraYBKmVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:44:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM="
+        }
+      ]
+    },
+    {
+      "Route": "css/contact.css",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\css\\contact.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:44:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM="
+        }
+      ]
+    },
+    {
+      "Route": "css/contact.css.gz",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\compressed\\7gyjab12jp-l2sn0ww44o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"arxXrUaCXuJXqmQml8r1clWaePseY/OtCGIraYBKmVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:44:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-arxXrUaCXuJXqmQml8r1clWaePseY/OtCGIraYBKmVw="
+        }
+      ]
+    },
+    {
+      "Route": "css/contact.l2sn0ww44o.css",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\compressed\\7gyjab12jp-l2sn0ww44o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.022222222222"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"arxXrUaCXuJXqmQml8r1clWaePseY/OtCGIraYBKmVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:44:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l2sn0ww44o"
+        },
+        {
+          "Name": "label",
+          "Value": "css/contact.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM="
+        }
+      ]
+    },
+    {
+      "Route": "css/contact.l2sn0ww44o.css",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\css\\contact.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:44:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l2sn0ww44o"
+        },
+        {
+          "Name": "label",
+          "Value": "css/contact.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3W3kRZiPxNh/FbSQ1jfSuOC2+xsAQIfrd539h2MdomM="
+        }
+      ]
+    },
+    {
+      "Route": "css/contact.l2sn0ww44o.css.gz",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\compressed\\7gyjab12jp-l2sn0ww44o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"arxXrUaCXuJXqmQml8r1clWaePseY/OtCGIraYBKmVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Dec 2024 06:44:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l2sn0ww44o"
+        },
+        {
+          "Name": "label",
+          "Value": "css/contact.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-arxXrUaCXuJXqmQml8r1clWaePseY/OtCGIraYBKmVw="
+        }
+      ]
+    },
     {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\obj\\Debug\\net9.0\\compressed\\rg640fyinu-b9sayid5wm.gz",

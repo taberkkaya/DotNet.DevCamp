@@ -96,3 +96,4 @@ C:\ProjectCollection\DotNet8.DevCamp\first-proj\obj\Debug\net9.0\refint\first-pr
 C:\ProjectCollection\DotNet8.DevCamp\first-proj\obj\Debug\net9.0\first-proj.pdb
 C:\ProjectCollection\DotNet8.DevCamp\first-proj\obj\Debug\net9.0\first-proj.genruntimeconfig.cache
 C:\ProjectCollection\DotNet8.DevCamp\first-proj\obj\Debug\net9.0\ref\first-proj.dll
+C:\ProjectCollection\DotNet8.DevCamp\first-proj\obj\Debug\net9.0\compressed\7gyjab12jp-l2sn0ww44o.gz

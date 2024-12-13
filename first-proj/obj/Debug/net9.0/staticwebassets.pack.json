@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\first-proj.w05n6n59eq.bundle.scp.css"
     },
     {
+      "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
       "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\first-proj\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
