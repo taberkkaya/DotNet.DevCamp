@@ -7,6 +7,7 @@ public static class Repository
     {
         _users.Add(new UserInfo()
         {
+            Id = 1,
             Name = "Ataberk",
             Phone = "+90 553 999 99 99",
             Email = "taberkkaya@gmail.com",
@@ -14,6 +15,7 @@ public static class Repository
         });
         _users.Add(new UserInfo()
         {
+            Id = 2,
             Name = "Ata",
             Phone = "+90 553 777 77 77",
             Email = "taberkkaya2@gmail.com",
@@ -21,6 +23,7 @@ public static class Repository
         });
         _users.Add(new UserInfo()
         {
+            Id = 3,
             Name = "Berk",
             Phone = "+90 553 666 66 66",
             Email = "taberkkaya3@gmail.com",
@@ -37,6 +40,12 @@ public static class Repository
 
     public static void CreateUser(UserInfo user)
     {
+        user.Id = Users.Count + 1;
         _users.Add(user);
+    }
+
+    public static UserInfo? GetById(int id)
+    {
+        return Users.FirstOrDefault(user => user.Id == id);
     }
 }

@@ -31,7 +31,8 @@
                     <td>@user.Name</td>
                     <td>@status</td>
                     <td>
-                        <a class="btn btn-sm btn-primary" href="#">Detay</a>
+                        <a class="btn btn-sm btn-primary" asp-controller="Meeting" asp-action="Details"
+                            asp-route-id="@user.Id">Detay</a>
                     </td>
                 </tr>
             }

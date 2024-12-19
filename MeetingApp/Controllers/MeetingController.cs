@@ -14,14 +14,27 @@ public class MeetingController : Controller
     [HttpPost]
     public IActionResult Apply(UserInfo userInfo)
     {
-        Repository.CreateUser(userInfo);
-        ViewBag.UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
-        return View("Thanks", userInfo);
+        if (ModelState.IsValid)
+        {
+            Repository.CreateUser(userInfo);
+            ViewBag.UserCount = Repository.Users.Where(info => info.WillAttend == true).Count();
+            return View("Thanks", userInfo);
+        }
+        else
+        {
+            return View(userInfo);
+        }
     }
 
     [HttpGet]
     public IActionResult List()
     {
         return View(Repository.Users);
+    }
+
+    [HttpGet]
+    public IActionResult Details(int id)
+    {
+        return View(Repository.GetById(id));
     }
 }
