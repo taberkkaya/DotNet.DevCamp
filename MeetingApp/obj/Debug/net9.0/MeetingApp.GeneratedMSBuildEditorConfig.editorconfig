@@ -28,12 +28,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xBcHBseS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProjectCollection/DotNet8.DevCamp/MeetingApp/Views/Meeting/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/ProjectCollection/DotNet8.DevCamp/MeetingApp/Views/Meeting/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProjectCollection/DotNet8.DevCamp/MeetingApp/Views/Meeting/Thanks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xUaGFua3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/ProjectCollection/DotNet8.DevCamp/MeetingApp/Views/Shared/_Layout.cshtml]
