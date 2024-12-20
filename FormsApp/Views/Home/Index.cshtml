@@ -1,0 +1,57 @@
+﻿@* @model IEnumerable<Product> *@
+@model ProductViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="card card-body my-3">
+    <form asp-action="Index" method="get">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-11">
+                    @* <select class="form-select" asp-items="ViewBag.Categories" name="category">
+                        <option value="0">Hepsi</option>
+                    </select> *@
+                    <select class="form-select"
+                        asp-items="@(new SelectList(Model.Categories, "CategoryId", "Name" ,Model.SelectedCategory))"
+                        name="category">
+                        <option value="0">Hepsi</option>
+                    </select>
+
+                </div>
+                <div class="col-md-1">
+                    <button type="submit" class="btn btn-primary">Filtrele</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th style="width: 100px;">@Html.DisplayNameFor(m => m.Products[0].ProductId)</th>
+            <th style="width: 100px;">@Html.DisplayNameFor(m => m.Products[0].Image)</th>
+            <th>@Html.DisplayNameFor(m => m.Products[0].Name)</th>
+            <th style="width: 100px;">@Html.DisplayNameFor(m => m.Products[0].Price)</th>
+            <th tyle="width: 130px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prd in @Model.Products)
+        {
+            <tr>
+                <td>@prd.ProductId</td>
+                <td>
+                    <img src="~/img/@prd.Image" class="img-fluid" alt="">
+                </td>
+                <td>@prd.Name</td>
+                <td>@prd.Price</td>
+                <td>
+                    <a href="" class="btn btn-sm btn-primary">Güncelle</a>
+                    <a href="" class="btn btn-sm btn-danger">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
