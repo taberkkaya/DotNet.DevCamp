@@ -140,7 +140,37 @@ public class HomeController : Controller
             return NotFound();
         }
 
+        // Repository.DeleteProduct(entity);
+        // return RedirectToAction("Index");
+
+        return View("DeleteConfirm", entity);
+    }
+
+    [HttpPost]
+    public IActionResult Delete(int? id, int productId)
+    {
+
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var entity = Repository.Products.FirstOrDefault(p => p.ProductId == id);
+        if (entity == null)
+        {
+            return NotFound();
+        }
         Repository.DeleteProduct(entity);
+        return RedirectToAction("Index");
+    }
+
+    [HttpPost]
+    public IActionResult EditProducts(List<Product> products)
+    {
+        foreach (var product in products)
+        {
+            Repository.EditProductsStatus(product);
+        }
 
         return RedirectToAction("Index");
     }
