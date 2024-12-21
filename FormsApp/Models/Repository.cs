@@ -32,4 +32,9 @@ public class Repository
         _products.Add(new Product() { ProductId = 5, Name = "Macbook Air", Price = 80000, Image = "5.jpg", IsActive = true, CategoryId = 2 });
         _products.Add(new Product() { ProductId = 6, Name = "Macbook Pro", Price = 90000, Image = "6.jpg", IsActive = true, CategoryId = 2 });
     }
+
+    public static void CreateProduct(Product entity)
+    {
+        _products.Add(entity);
+    }
 }

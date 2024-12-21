@@ -18,7 +18,6 @@ C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\FormsApp.sourceli
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\scopedcss\bundle\FormsApp.styles.css
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\scopedcss\projectbundle\FormsApp.bundle.scp.css
-C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\compressed\0mrx2ujytx-b9sayid5wm.gz
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\compressed\5o6f55o15h-61n19gt1b8.gz
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\compressed\gcr68aqoy9-xtxxf3hu2r.gz
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\compressed\3ar92ythsm-bqjiyaj88i.gz
@@ -96,3 +95,4 @@ C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\refint\FormsApp.d
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\FormsApp.pdb
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\FormsApp.genruntimeconfig.cache
 C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\ref\FormsApp.dll
+C:\ProjectCollection\DotNet8.DevCamp\FormsApp\obj\Debug\net9.0\compressed\0mrx2ujytx-tstvun4x2m.gz

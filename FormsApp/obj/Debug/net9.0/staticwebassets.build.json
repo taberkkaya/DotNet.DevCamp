@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3dxh4Xu6d3ObjzSCmpm58Jx7iRzugjZ5J9+pZFUOwuw=",
+  "Hash": "x8HZIfhvrAZV+IFi7qLCNJxo41LLKYPPnKhHkl+mnnE=",
   "Source": "FormsApp",
   "BasePath": "_content/FormsApp",
   "Mode": "Default",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-b9sayid5wm.gz",
+      "Identity": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-tstvun4x2m.gz",
       "SourceId": "FormsApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/FormsApp",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=tstvun4x2m}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0suozzrugb",
-      "Integrity": "0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=",
+      "Fingerprint": "5tee5mgdsb",
+      "Integrity": "eb/mAa0qaRt+7WvEquC3bBiaG07tb09/uAuvGkkEICY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "tstvun4x2m",
+      "Integrity": "ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2854,13 +2854,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-b9sayid5wm.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-tstvun4x2m.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.002865329513"
         }
       ],
       "ResponseHeaders": [
@@ -2870,19 +2870,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "348"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"eb/mAa0qaRt+7WvEquC3bBiaG07tb09/uAuvGkkEICY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 05:48:35 GMT"
+          "Value": "Sat, 21 Dec 2024 18:57:11 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2898,26 +2898,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "b9sayid5wm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2927,7 +2919,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "751"
         },
         {
           "Name": "Content-Type",
@@ -2935,11 +2927,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 05:48:35 GMT"
+          "Value": "Sat, 21 Dec 2024 18:57:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-tstvun4x2m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eb/mAa0qaRt+7WvEquC3bBiaG07tb09/uAuvGkkEICY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 18:57:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eb/mAa0qaRt+7WvEquC3bBiaG07tb09/uAuvGkkEICY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.tstvun4x2m.css",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-tstvun4x2m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002865329513"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "348"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eb/mAa0qaRt+7WvEquC3bBiaG07tb09/uAuvGkkEICY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 18:57:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tstvun4x2m"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.tstvun4x2m.css",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "751"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 18:57:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2949,7 +3086,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "tstvun4x2m"
         },
         {
           "Name": "label",
@@ -2957,13 +3094,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-ncIIhs8GuIRpm/14XsZP2Zn/TiuX+RB8GsiJiYttF60="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-b9sayid5wm.gz",
+      "Route": "css/site.tstvun4x2m.css.gz",
+      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-tstvun4x2m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2972,7 +3109,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "348"
         },
         {
           "Name": "Content-Type",
@@ -2980,11 +3117,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"eb/mAa0qaRt+7WvEquC3bBiaG07tb09/uAuvGkkEICY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 05:48:35 GMT"
+          "Value": "Sat, 21 Dec 2024 18:57:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3002,7 +3139,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "tstvun4x2m"
         },
         {
           "Name": "label",
@@ -3010,144 +3147,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-b9sayid5wm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003134796238"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 05:48:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "667"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 05:48:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\obj\\Debug\\net9.0\\compressed\\0mrx2ujytx-b9sayid5wm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 05:48:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-eb/mAa0qaRt+7WvEquC3bBiaG07tb09/uAuvGkkEICY="
         }
       ]
     },
