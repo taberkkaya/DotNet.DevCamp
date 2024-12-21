@@ -13,14 +13,13 @@ public class Product
 
     [Required]
     [Display(Name = "Ürün Adı")]
-    public string Name { get; set; } = string.Empty;
+    public string Name { get; set; } = null!;
 
     [Required]
     [Range(0, 1000000)]
     [Display(Name = "Ürün Fiyatı")]
     public decimal? Price { get; set; }
 
-    [Required]
     [Display(Name = "Resim")]
     public string Image { get; set; } = string.Empty;
 
@@ -30,4 +29,5 @@ public class Product
     [Required]
     [Display(Name = "Kategori")]
     public int? CategoryId { get; set; }
+
 }

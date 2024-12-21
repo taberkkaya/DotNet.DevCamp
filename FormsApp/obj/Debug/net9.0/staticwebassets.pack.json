@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\img\\2.jpg"
     },
     {
+      "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\img\\213aabdb-9037-47c4-8c05-f8c8f191de41.jpg",
+      "PackagePath": "staticwebassets\\img\\213aabdb-9037-47c4-8c05-f8c8f191de41.jpg"
+    },
+    {
       "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\img\\3.jpg",
       "PackagePath": "staticwebassets\\img\\3.jpg"
     },
@@ -35,6 +39,14 @@
     {
       "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\img\\6.jpg",
       "PackagePath": "staticwebassets\\img\\6.jpg"
+    },
+    {
+      "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\img\\e8f2eead-2c40-4f73-803c-55cbca441df0.jpg",
+      "PackagePath": "staticwebassets\\img\\e8f2eead-2c40-4f73-803c-55cbca441df0.jpg"
+    },
+    {
+      "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\img\\fd043c15-e077-4078-9d03-edae6966d3fa.jpg",
+      "PackagePath": "staticwebassets\\img\\fd043c15-e077-4078-9d03-edae6966d3fa.jpg"
     },
     {
       "Id": "C:\\ProjectCollection\\DotNet8.DevCamp\\FormsApp\\wwwroot\\js\\site.js",
