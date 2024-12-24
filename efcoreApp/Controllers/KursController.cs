@@ -30,11 +30,22 @@ public class KursController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Kurs model)
+    public async Task<IActionResult> Create(KursViewModel model)
     {
-        _context.Kurslar.Add(model);
-        await _context.SaveChangesAsync();
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            _context.Kurslar.Add(new Kurs()
+            {
+                KursId = model.KursId,
+                Baslik = model.Baslik,
+                OgretmenId = model.OgretmenId
+            }
+            );
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
+        return View(model);
     }
 
     [HttpGet]
@@ -104,7 +115,21 @@ public class KursController : Controller
 
         }
 
-        return View(model);
+        var kurs = await _context.Kurslar
+                                .Include(k => k.KursKayitlari)
+                                .ThenInclude(k => k.Ogrenci)
+                                .Select(k => new KursViewModel
+                                {
+                                    KursId = k.KursId,
+                                    Baslik = k.Baslik,
+                                    OgretmenId = k.OgretmenId,
+                                    KursKayitlari = k.KursKayitlari
+                                })
+                                .FirstOrDefaultAsync(x => x.KursId == model.KursId);
+
+        ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
+
+        return View(kurs);
     }
 
     [HttpGet]
