@@ -1,0 +1,25 @@
+@model Ogretmen
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Ad" class="form-label">@Html.DisplayNameFor(m => m.Ad)</label>
+        <input asp-for="Ad" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Soyad" class="form-label">@Html.DisplayNameFor(m => m.Soyad)</label>
+        <input asp-for="Soyad" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Eposta" class="form-label">@Html.DisplayNameFor(m => m.Eposta)</label>
+        <input asp-for="Eposta" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Telefon" class="form-label">@Html.DisplayNameFor(m => m.Telefon)</label>
+        <input asp-for="Telefon" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="BaslamaTarihi" class="form-label">@Html.DisplayNameFor(m => m.BaslamaTarihi)</label>
+        <input asp-for="BaslamaTarihi" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
