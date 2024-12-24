@@ -4,29 +4,31 @@ using Microsoft.EntityFrameworkCore;
 
 namespace efcoreApp.Controllers;
 
-public class OgrenciController : Controller
+public class KursController : Controller
 {
     private readonly DataContext _context;
-    public OgrenciController(DataContext context)
+    public KursController(DataContext context)
     {
         _context = context;
     }
 
+    [HttpGet]
     public async Task<IActionResult> Index()
     {
-        return View(await _context.Ogrenciler.ToListAsync());
+        return View(await _context.Kurslar.ToListAsync());
     }
 
 
+    [HttpGet]
     public IActionResult Create()
     {
         return View();
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Ogrenci model)
+    public async Task<IActionResult> Create(Kurs model)
     {
-        _context.Ogrenciler.Add(model);
+        _context.Kurslar.Add(model);
         await _context.SaveChangesAsync();
         return RedirectToAction("Index");
     }
@@ -39,21 +41,20 @@ public class OgrenciController : Controller
             return NotFound();
         }
 
-        var ogr = await _context.Ogrenciler.FindAsync(id);
+        var kurs = await _context.Kurslar.FindAsync(id);
 
-        if (ogr == null)
+        if (kurs == null)
         {
             return NotFound();
         }
 
-        return View(ogr);
+        return View(kurs);
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, Ogrenci model)
+    public async Task<IActionResult> Edit(int id, Kurs model)
     {
-        if (id != model.OgrenciId)
+        if (id != model.KursId)
         {
             return NotFound();
         }
@@ -68,7 +69,7 @@ public class OgrenciController : Controller
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!_context.Ogrenciler.Any(o => o.OgrenciId == model.OgrenciId))
+                if (!_context.Kurslar.Any(o => o.KursId == model.KursId))
                 {
                     return NotFound();
                 }
@@ -92,24 +93,24 @@ public class OgrenciController : Controller
             return NotFound();
         }
 
-        var ogr = await _context.Ogrenciler.FindAsync(id);
-        if (ogr == null)
+        var kurs = await _context.Kurslar.FindAsync(id);
+        if (kurs == null)
         {
             return NotFound();
         }
 
-        return View(ogr);
+        return View(kurs);
     }
 
     [HttpPost]
     public async Task<IActionResult> Delete([FromForm] int id)
     {
-        var ogrenci = await _context.Ogrenciler.FindAsync(id);
-        if (ogrenci == null)
+        var kurs = await _context.Kurslar.FindAsync(id);
+        if (kurs == null)
         {
             return NotFound();
         }
-        _context.Ogrenciler.Remove(ogrenci);
+        _context.Kurslar.Remove(kurs);
         await _context.SaveChangesAsync();
         return RedirectToAction("Index");
     }
