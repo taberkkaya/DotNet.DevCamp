@@ -30,8 +30,8 @@ public static class SeedData
             if (!context.Users.Any())
             {
                 context.Users.AddRange(
-                    new User { UserName = "admin" },
-                    new User { UserName = "taberkkaya" }
+                    new User { UserName = "admin", Image = "dummy-user.jpeg" },
+                    new User { UserName = "taberkkaya", Image = "dummy-user.jpeg" }
                 );
                 context.SaveChanges();
             }
@@ -46,7 +46,8 @@ public static class SeedData
                         IsActive = true,
                         PublishedOn = DateTime.Now.AddDays(-10),
                         Tags = context.Tags.Take(3).ToList(),
-                        UserId = 1
+                        UserId = 1,
+                        Image = "dummy-image.jpg"
                     },
                     new Post
                     {
@@ -55,7 +56,8 @@ public static class SeedData
                         IsActive = true,
                         PublishedOn = DateTime.Now.AddDays(-20),
                         Tags = context.Tags.Take(2).ToList(),
-                        UserId = 1
+                        UserId = 1,
+                        Image = "dummy-image.jpg"
                     },
                     new Post
                     {
@@ -64,7 +66,8 @@ public static class SeedData
                         IsActive = true,
                         PublishedOn = DateTime.Now.AddDays(-5),
                         Tags = context.Tags.Take(4).ToList(),
-                        UserId = 2
+                        UserId = 2,
+                        Image = "dummy-image.jpg"
                     }
                 );
                 context.SaveChanges();

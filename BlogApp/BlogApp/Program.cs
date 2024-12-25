@@ -16,6 +16,7 @@ builder.Services.AddDbContext<BlogContext>(options =>
 });
 
 builder.Services.AddScoped<IPostRepository, EfPostRepository>();
+builder.Services.AddScoped<ITagRepository, EfTagRepository>();
 
 var app = builder.Build();
 
@@ -23,6 +24,9 @@ app.UseStaticFiles();
 
 SeedData.AddTestData(app);
 
-app.MapDefaultControllerRoute();
+// app.MapDefaultControllerRoute();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Post}/{action=Index}/{id?}");
 
 app.Run();
