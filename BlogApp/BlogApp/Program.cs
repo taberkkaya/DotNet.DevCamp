@@ -24,9 +24,23 @@ app.UseStaticFiles();
 
 SeedData.AddTestData(app);
 
+app.MapControllerRoute(
+    name: "post_details",
+    pattern: "post/details/{url}",
+    defaults: new { controller = "Post", action = "Details" }
+);
+
+app.MapControllerRoute(
+    name: "post_by_tag",
+    pattern: "post/tag/{tag}",
+    defaults: new { controller = "Post", action = "Index" }
+);
+
 // app.MapDefaultControllerRoute();
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Post}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
 
 app.Run();

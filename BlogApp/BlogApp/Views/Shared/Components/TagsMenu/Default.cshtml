@@ -1,15 +1,15 @@
 @model List<Tag>
 
-<div class="card">
+<div class="card mb-3">
     <div class="card-header">
-        <h5 class="card-title">Kategoriler</h5>
+        <h5 class="card-title mb-0">Kategoriler</h5>
     </div>
     <div class="card-body">
         <ul class="list-inline d-flex flex-wrap gap-2">
             @foreach (var tag in Model)
             {
                 <li class="list-inline-item">
-                    <a class="btn btn-outline-secondary btn-sm">@tag.Text</a>
+                    <a href="/post/tag/@tag.Url" class="btn btn-outline-secondary btn-sm">@tag.Text</a>
                 </li>
             }
         </ul>

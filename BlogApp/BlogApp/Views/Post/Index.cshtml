@@ -14,12 +14,17 @@
                         </div>
                         <div class="col-8">
                             <h5>
-                                <a href="#" class="btn-link fw-bold">@post.Title</a>
+                                <a href="/post/details/@post.Url" class="btn-link fw-bold">@post.Title</a>
                             </h5>
                             <p>@post.Content</p>
-                            <a href="#" class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">Web
-                                Programlama
-                            </a>
+                            <div class="tags">
+                                @foreach (var tag in post.Tags)
+                                {
+                                    <a href="/post/tag/@tag.Url"
+                                        class="badge bg-@tag.Color bg-opacity-10 text-@tag.Color mb-2 fw-bold">@tag.Text
+                                    </a>
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,5 +50,6 @@
     </div>
     <div class="col-lg-4">
         <vc:tags-menu></vc:tags-menu>
+        <vc:new-post></vc:new-post>
     </div>
 </div>
