@@ -1,4 +1,5 @@
 using BlogApp.Data.Abstract;
+using BlogApp.Entity;
 using BlogApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,9 +9,11 @@ namespace BlogApp.Controllers;
 public class PostController : Controller
 {
     private IPostRepository _postRepository;
-    public PostController(IPostRepository postRepository)
+    private ICommentRepository _commentRepository;
+    public PostController(IPostRepository postRepository, ICommentRepository commentRepository)
     {
         _postRepository = postRepository;
+        _commentRepository = commentRepository;
 
     }
     public async Task<IActionResult> Index(string tag)
@@ -37,9 +40,28 @@ public class PostController : Controller
         .FirstOrDefaultAsync(p => p.Url == url));
     }
 
-    public IActionResult AddComment(int PostId, string UserName, string Text)
+    [HttpPost]
+    public JsonResult AddComment(int postId, string userName, string text)
     {
-        return View();
+        var comment = new Comment
+        {
+            PostId = postId,
+            User = new User
+            {
+                UserName = userName,
+                Image = "dummy-user.jpeg"
+            },
+            Text = text,
+            PublishedOn = DateTime.Now,
+        };
+        _commentRepository.CreateComment(comment);
 
+        return Json(new
+        {
+            userName,
+            text,
+            comment.PublishedOn,
+            comment.User.Image
+        });
     }
 }

@@ -21,25 +21,26 @@
                     <h4>@Model.Comments.Count() adet yorum</h4>
                 </div>
                 <div class="card-body">
-
-                    @foreach (var comment in Model.Comments)
-                    {
-                        <div class="my-4 d-flex">
-                            <img src="/img/@comment.User.Image" alt="" class="avatar rounded-circle float-start me-3">
-                            <div>
-                                <div class="mb-2">
-                                    <h6 class="mb-0">@comment.User.UserName</h6>
-                                    <span>@comment.PublishedOn</span>
+                    <div class="comments">
+                        @foreach (var comment in Model.Comments)
+                        {
+                            <div class="my-4 d-flex">
+                                <img src="/img/@comment.User.Image" alt="" class="avatar rounded-circle float-start me-3">
+                                <div>
+                                    <div class="mb-2 d-flex">
+                                        <h6 class="me-2 mb-0">@comment.User.UserName</h6>
+                                        <small>@comment.PublishedOn.ToString("dd/MM/yyyy HH:mm")</small>
+                                    </div>
+                                    <p>@comment.Text</p>
                                 </div>
-                                <p>@comment.Text</p>
                             </div>
-                        </div>
-                    }
+                        }
+                    </div>
                     <hr class="my-4">
                     <div>
                         <h4 class="mb-3">Yorum Ekle</h4>
                         <form action="/post/AddComment" method="post">
-                            <input type="hidden" name="PostId" value="@Model.PostId">
+                            <input type="hidden" id="PostId" name="PostId" value="@Model.PostId">
                             <div class="mb-1">
                                 <label for="UserName" class="form-label">Kullanıcı Adı</label>
                                 <input type="text" name="UserName" id="UserName" class="form-control">
@@ -49,7 +50,7 @@
                                 <textarea type="text" name="Text" id="Text" rows="3" class="form-control"></textarea>
                             </div>
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                                <button id="btnCommentSave" type="submit" class="btn btn-primary">Kaydet</button>
                             </div>
                         </form>
                     </div>
@@ -62,3 +63,43 @@
         <vc:new-post></vc:new-post>
     </div>
 </div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnCommentSave').click(function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("AddComment")',
+                    dataType: 'json',
+                    data: {
+                        postId: $('#PostId').val(),
+                        userName: $('#UserName').val(),
+                        text: $('#Text').val()
+                    },
+                    success: function (comment) {
+                        const date = new Date(comment.publishedOn);
+                        const formattedDate = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
+                        $('.comments').append(`
+                            <div class="my-4 d-flex">
+                                <img src="/img/${comment.image}" alt="" class="avatar rounded-circle float-start me-3">
+                                <div>
+                                    <div class="mb-2 d-flex">
+                                        <h6 class="me-2 mb-0">${comment.userName}</h6>
+                                        <small>${formattedDate}</small>
+                                    </div>
+                                    <p>${comment.text}</p>
+                                </div>
+                            </div>`);
+
+                        $("#UserName").val('');
+                        $("#Text").val('');
+                    }
+                });
+
+                return false;
+            });
+        });
+    </script>
+}
