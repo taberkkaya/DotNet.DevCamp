@@ -1,5 +1,6 @@
 using BlogApp.Data.Abstract;
 using BlogApp.Data.Concrete.EfCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,10 +19,19 @@ builder.Services.AddDbContext<BlogContext>(options =>
 builder.Services.AddScoped<IPostRepository, EfPostRepository>();
 builder.Services.AddScoped<ITagRepository, EfTagRepository>();
 builder.Services.AddScoped<ICommentRepository, EfCommentRepository>();
+builder.Services.AddScoped<IUserRepository, EfUserRepository>();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(
+    options => options.LoginPath = "/User/Login"
+);
 
 var app = builder.Build();
 
 app.UseStaticFiles();
+
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
 
 SeedData.AddTestData(app);
 
@@ -29,6 +39,12 @@ app.MapControllerRoute(
     name: "post_details",
     pattern: "post/details/{url}",
     defaults: new { controller = "Post", action = "Details" }
+);
+
+app.MapControllerRoute(
+    name: "post_details",
+    pattern: "profile/{userName}",
+    defaults: new { controller = "User", action = "Profile" }
 );
 
 app.MapControllerRoute(

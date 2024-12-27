@@ -30,8 +30,10 @@ public static class SeedData
             if (!context.Users.Any())
             {
                 context.Users.AddRange(
-                    new User { UserName = "admin", Image = "dummy-user.jpeg" },
-                    new User { UserName = "taberkkaya", Image = "dummy-user.jpeg" }
+                    new User { UserName = "admin", Image = "dummy-user.jpeg", Name = "Admin", Email = "admin@gmail.com", Password = "123456" },
+                    new User { UserName = "taberkkaya", Image = "dummy-user.jpeg", Name = "Ataberk", Email = "taberkkaya@gmail.com", Password = "123456" }
+
+
                 );
                 context.SaveChanges();
             }
@@ -69,6 +71,7 @@ public static class SeedData
                     new Post
                     {
                         Title = "Django",
+                        Description = "Django Dersleri",
                         Content = "Django Dersleri",
                         Url = "django",
                         IsActive = true,
@@ -80,6 +83,7 @@ public static class SeedData
                     new Post
                     {
                         Title = "React",
+                        Description = "React Dersleri",
                         Content = "React Dersleri",
                         Url = "react",
                         IsActive = true,
@@ -91,6 +95,7 @@ public static class SeedData
                     new Post
                     {
                         Title = "Angular",
+                        Description = "Angular Dersleri",
                         Content = "Angular Dersleri",
                         Url = "angular",
                         IsActive = true,

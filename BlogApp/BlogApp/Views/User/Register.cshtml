@@ -1,0 +1,38 @@
+@model RegisterViewModel
+
+<div class="row">
+    <div class="col-12">
+        <div class="bg-white p-4">
+            <h1>Register</h1>
+            <form method="post" asp-action="Register" novalidate>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="mb-3">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                    <label asp-for="UserName" class="form-label"></label>
+                    <input asp-for="UserName" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    <label asp-for="ConfirmPassword" class="form-label"></label>
+                    <input asp-for="ConfirmPassword" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+</div>

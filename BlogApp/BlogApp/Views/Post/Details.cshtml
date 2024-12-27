@@ -13,7 +13,16 @@
                 }
             </div>
             <img src="~/img/@Model.Image" alt="" class="img-fluid rounded mb-3">
-            <div>@Model.Content</div>
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <i class="bi bi-calendar"></i> @Model.PublishedOn.ToString("D")
+                </li>
+                <li class="list-inline-item">
+                    <i class="bi bi-person-circle"></i> <a href="/profile/@Model.User.UserName">@Model.User.Name</a>
+                </li>
+            </ul>
+            <hr class="mt-1">
+            <div>@Html.Raw(Model.Content)</div>
         </div>
         <div class="bg-white mt-3 rounded">
             <div class="card border-0">
@@ -28,7 +37,8 @@
                                 <img src="/img/@comment.User.Image" alt="" class="avatar rounded-circle float-start me-3">
                                 <div>
                                     <div class="mb-2 d-flex">
-                                        <h6 class="me-2 mb-0">@comment.User.UserName</h6>
+                                        <h6 class="me-2 mb-0"><a
+                                                href="/profile/@comment.User.UserName">@comment.User.Name</a></h6>
                                         <small>@comment.PublishedOn.ToString("dd/MM/yyyy HH:mm")</small>
                                     </div>
                                     <p>@comment.Text</p>
@@ -36,24 +46,27 @@
                             </div>
                         }
                     </div>
-                    <hr class="my-4">
-                    <div>
-                        <h4 class="mb-3">Yorum Ekle</h4>
-                        <form action="/post/AddComment" method="post">
-                            <input type="hidden" id="PostId" name="PostId" value="@Model.PostId">
-                            <div class="mb-1">
-                                <label for="UserName" class="form-label">Kullanıcı Adı</label>
-                                <input type="text" name="UserName" id="UserName" class="form-control">
-                            </div>
-                            <div class="mb-1">
-                                <label for="Text" class="form-label">Yorum</label>
-                                <textarea type="text" name="Text" id="Text" rows="3" class="form-control"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <button id="btnCommentSave" type="submit" class="btn btn-primary">Kaydet</button>
-                            </div>
-                        </form>
-                    </div>
+                    @if (User.Identity!.IsAuthenticated)
+                    {
+                        <hr class="my-4">
+                        <div>
+                            <h4 class="mb-3">Yorum Ekle</h4>
+                            <form action="/post/AddComment" method="post">
+                                <input type="hidden" id="PostId" name="PostId" value="@Model.PostId">
+                                <div class="mb-1">
+                                    <label for="Text" class="form-label">Yorum</label>
+                                    <textarea type="text" name="Text" id="Text" rows="3" class="form-control"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <button id="btnCommentSave" type="submit" class="btn btn-primary">Kaydet</button>
+                                </div>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Yorum için <a href="/user/login">giriş</a> yapmalısınız. </p>
+                    }
                 </div>
             </div>
         </div>
@@ -79,19 +92,18 @@
                         text: $('#Text').val()
                     },
                     success: function (comment) {
-                        const date = new Date(comment.publishedOn);
-                        const formattedDate = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
+                        console.log(comment);
                         $('.comments').append(`
-                                    <div class="my-4 d-flex">
-                                    <img src="/img/${comment.image}" alt="" class="avatar rounded-circle float-start me-3">
-                                    <div>
-                                        <div class="mb-2 d-flex">
-                                            <h6 class="me-2 mb-0">${comment.userName}</h6>
-                                            <small>${formattedDate}</small>
-                                        </div>
-                                            <p>${comment.text}</p>
-                                    </div>
-                                    </div>`);
+                                                                                                                                                <div class="my-4 d-flex">
+                                                                                                                                                <img src="/img/${comment.avatar}" alt="" class="avatar rounded-circle float-start me-3">
+                                                                                                                                                <div>
+                                                                                                                                                <div class="mb-2 d-flex">
+                                                                                                                                                    <h6 class="me-2 mb-0">${comment.userName}</h6>
+                                                                                                                                                    <small>${comment.publishedOn}</small>
+                                                                                                                                                </div>
+                                                                                                                                                <p>${comment.text}</p>
+                                                                                                                                                </div>
+                                                                                                                                                </div>`);
 
                         $("#UserName").val('');
                         $("#Text").val('');

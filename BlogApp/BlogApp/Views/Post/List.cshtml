@@ -1,0 +1,30 @@
+@model List<Post>
+<div class="row">
+    <div class="col-12">
+        <h2>Gönderiler</h2>
+        <hr>
+        <a href="/post/create" class="btn btn-primary mb-3">Yeni Gönderi</a>
+        <table class="table table-bordered">
+            <thead>
+                <th style="width:125px;">Görse</th>
+                <th>Başlık</th>
+                <th>Aktif min?</th>
+                <th style="width:125px;"></th>
+            </thead>
+            <tbody>
+                @foreach (var post in Model)
+                {
+                    <tr>
+                        <td><img src="~/img/@post.Image" class="img-fluid" alt=""></td>
+                        <td>@post.Title</td>
+                        <td>@post.IsActive</td>
+                        <td>
+                            <a href="/post/edit/@post.PostId" class="btn btn-sm btn-primary">Güncelle</a>
+                            <a href="" class="btn btn-sm btn-danger">Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
