@@ -1,0 +1,32 @@
+@model IEnumerable<IdentityUser>
+
+<a class="btn btn-success" asp-action="Create">Create User</a>
+<hr>
+
+<table class="table table-sm table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    <div class="d-flex flex-row justify-content-center align-items-center gap-1">
+                        <a href="#" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
