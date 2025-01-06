@@ -1,0 +1,55 @@
+@model AppRole
+
+<h2>Edit Role</h2>
+<hr>
+
+<form asp-action="Edit" method="post">
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <input type="hidden" asp-for="Id">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input type="text" asp-for="Name" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+
+<hr>
+
+<table class="table table-sm table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (ViewBag.Users != null)
+        {
+
+            @if (ViewBag.Users.Count == 0)
+            {
+                <tr>
+                    <td colspan="4" class="text-center">No users found</td>
+                </tr>
+            }
+
+            @foreach (var user in ViewBag.Users)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.FullName</td>
+                    <td>@user.Email</td>
+                    <td>
+                        <div class="d-flex flex-row justify-content-center align-items-center gap-1">
+                            <a class="btn btn-sm btn-primary" asp-controller="Users" asp-action="Edit"
+                                asp-route-id="@user.Id">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

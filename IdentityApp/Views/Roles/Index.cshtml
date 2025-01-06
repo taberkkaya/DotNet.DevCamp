@@ -26,7 +26,7 @@
             <tr>
                 <td>@role.Id</td>
                 <td>@role.Name</td>
-                <td>User List</td>
+                <td asp-role-users="@role.Id"></td>
                 <td>
                     <div class="d-flex flex-row justify-content-center align-items-center gap-1">
                         <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@role.Id">Edit</a>

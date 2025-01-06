@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using IdentityApp.Models;
 
 namespace IdentityApp.ViewModels;
 
@@ -16,4 +17,6 @@ public class EditUserViewModel
     [DataType(DataType.Password)]
     [Compare(nameof(Password))]
     public string? ConfirmPassword { get; set; }
+
+    public IList<string>? SelectedRoles { get; set; }
 }
