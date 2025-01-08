@@ -3,7 +3,7 @@
 <h2>Create User</h2>
 <hr>
 
-<form action="Create" method="post">
+<form asp-controller="Account" asp-action="Create" method="post">
     <div class="text-danger" asp-validation-summary="All"></div>
     <div class="mb-3">
         <label asp-for="FullName" class="form-label"></label>
