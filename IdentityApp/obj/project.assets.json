@@ -3259,11 +3259,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProjectCollection\\DotNet8.DevCamp\\IdentityApp\\IdentityApp.csproj",
+      "projectUniqueName": "C:\\ProjectCollection\\DotNet8.DevCamp\\CloneDevCamp\\DotNet.DevCamp\\IdentityApp\\IdentityApp.csproj",
       "projectName": "IdentityApp",
-      "projectPath": "C:\\ProjectCollection\\DotNet8.DevCamp\\IdentityApp\\IdentityApp.csproj",
+      "projectPath": "C:\\ProjectCollection\\DotNet8.DevCamp\\CloneDevCamp\\DotNet.DevCamp\\IdentityApp\\IdentityApp.csproj",
       "packagesPath": "C:\\Users\\ataberk\\.nuget\\packages\\",
-      "outputPath": "C:\\ProjectCollection\\DotNet8.DevCamp\\IdentityApp\\obj\\",
+      "outputPath": "C:\\ProjectCollection\\DotNet8.DevCamp\\CloneDevCamp\\DotNet.DevCamp\\IdentityApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
