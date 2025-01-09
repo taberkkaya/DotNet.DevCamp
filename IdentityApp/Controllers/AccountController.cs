@@ -148,5 +148,81 @@ public class AccountController : Controller
         return RedirectToAction("Login");
     }
 
+    [HttpGet]
+    public IActionResult ForgotPassword()
+    {
+        return View();
+    }
 
+    [HttpPost]
+    public async Task<IActionResult> ForgotPassword(string email)
+    {
+        if (string.IsNullOrEmpty(email))
+        {
+            TempData["Message"] = "Email address is required";
+            return View();
+        }
+
+        var user = await _userManager.FindByEmailAsync(email);
+
+        if (user == null)
+        {
+            TempData["Message"] = "No user found with this email address";
+            return View();
+        }
+
+        var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+        var url = Url.Action("ResetPassword", "Account", new { user.Id, token });
+
+        await _emailSender.SendEmailAsync(email, "Reset Password", $"Click <a href='http://localhost:5281{url}'>here</a> to reset your password");
+
+        TempData["Message"] = "Password reset link has been sent to your email address";
+
+        return View();
+    }
+
+    [HttpGet]
+    public IActionResult ResetPassword(string id, string token)
+    {
+        if (id == null || token == null)
+        {
+            TempData["Message"] = "Invalid password reset token";
+            return RedirectToAction("Login");
+        }
+
+        var model = new ResetViewModel
+        {
+            UserId = id,
+            Token = token
+        };
+
+        return View(model);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> ResetPassword(ResetViewModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            var user = await _userManager.FindByIdAsync(model.UserId);
+
+            if (user != null)
+            {
+                var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+
+                if (result.Succeeded)
+                {
+                    TempData["Message"] = "Password reset successfully";
+                    return RedirectToAction("Login");
+                }
+
+                foreach (var err in result.Errors)
+                {
+                    ModelState.AddModelError("", err.Description);
+                }
+            }
+        }
+
+        return View(model);
+    }
 }
