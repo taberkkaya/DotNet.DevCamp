@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProductAPI.DTO;
 using ProductAPI.Models;
 
 namespace ProductAPI.Controllers;
@@ -9,41 +11,37 @@ namespace ProductAPI.Controllers;
 public class ProductsController : ControllerBase
 {
 
-    private static List<Product>? _products;
+    private readonly ProductsContext _context;
 
-    public ProductsController()
+    public ProductsController(ProductsContext context)
     {
-        _products =
-        [
-            new Product { ProductId = 1, ProductName = "Iphone 14", Price = 10000, IsActive = true },
-            new Product { ProductId = 2, ProductName = "Iphone 15", Price = 20000, IsActive = true },
-            new Product { ProductId = 3, ProductName = "Iphone 16", Price = 30000, IsActive = true },
-            new Product { ProductId = 4, ProductName = "Iphone SE", Price = 40000, IsActive = true },
-            new Product { ProductId = 5, ProductName = "Iphone 5", Price = 50000, IsActive = true },
-        ];
+        _context = context;
     }
 
     [HttpGet]
-    public IActionResult GetProducts()
+    public async Task<IActionResult> GetProducts()
     {
-        if (_products == null)
-        {
-            return NotFound();
-        }
-        return Ok(_products);
+        var products = await _context.Products
+        .Where(i => i.IsActive)
+        .Select(p => ProductToDTO(p))
+        .ToListAsync();
+
+        return Ok(products);
     }
 
     //localhost:5000/api/products/1 => GET
     // [HttpGet("api/[controller]/{id}")]
     [HttpGet("{id}")]
-    public IActionResult GetProduct(int? id)
+    public async Task<IActionResult> GetProduct(int? id)
     {
         if (id == null)
         {
             return NotFound();
         }
 
-        var p = _products?.FirstOrDefault(i => i.ProductId == id);
+        var p = await _context.Products
+        .Select(p => ProductToDTO(p))
+        .FirstOrDefaultAsync(i => i.ProductId == id);
 
         if (p == null)
         {
@@ -51,5 +49,85 @@ public class ProductsController : ControllerBase
         }
 
         return Ok(p);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateProduct(Product entity)
+    {
+        _context.Products.Add(entity);
+        await _context.SaveChangesAsync();
+
+        return CreatedAtAction(nameof(GetProduct), new { id = entity.ProductId }, entity);
+
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateProduct(int id, Product entity)
+    {
+        if (id != entity.ProductId)
+        {
+            return BadRequest();
+        }
+
+        var product = await _context.Products.FirstOrDefaultAsync(i => i.ProductId == id);
+
+        if (product == null)
+        {
+            return NotFound();
+        }
+
+        product.ProductName = entity.ProductName;
+        product.Price = entity.Price;
+        product.IsActive = entity.IsActive;
+
+        try
+        {
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception e)
+        {
+            return NotFound();
+        }
+
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteProduct(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var product = await _context.Products.FirstOrDefaultAsync(i => i.ProductId == id);
+
+        if (product == null)
+        {
+            return NotFound();
+        }
+
+        _context.Products.Remove(product);
+
+        try
+        {
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception e)
+        {
+            return NotFound();
+        }
+
+        return NoContent();
+    }
+
+    private static ProductDTO ProductToDTO(Product p)
+    {
+        return new ProductDTO
+        {
+            ProductId = p.ProductId,
+            Price = p.Price,
+            ProductName = p.ProductName
+        };
     }
 }
