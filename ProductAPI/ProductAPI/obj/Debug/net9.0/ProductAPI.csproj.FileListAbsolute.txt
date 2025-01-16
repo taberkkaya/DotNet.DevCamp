@@ -161,3 +161,11 @@ C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Micr
 C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\ProjectCollection\DotNet8.DevCamp\ProductAPI\ProductAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
