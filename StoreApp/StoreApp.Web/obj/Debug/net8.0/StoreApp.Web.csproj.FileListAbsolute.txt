@@ -128,3 +128,5 @@ C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\bin\Debug\net8.0\runt
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\bin\Debug\net8.0\StoreApp.Data.dll
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\bin\Debug\net8.0\StoreApp.Data.pdb
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\obj\Debug\net8.0\StoreApp.AB0980F6.Up2Date
+C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\bin\Debug\net8.0\libman.json
+C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\bin\Debug\net8.0\StoreApp.Web.staticwebassets.runtime.json

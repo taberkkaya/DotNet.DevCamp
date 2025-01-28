@@ -33,7 +33,8 @@ public class HomeController : Controller
             PageInfo = new PageInfo
             {
                 ItemsPerPage = pageSize,
-                TotalItems = _storeRepository.Products.Count()
+                TotalItems = _storeRepository.Products.Count(),
+                CurrentPage = page
             }
         });
     }
