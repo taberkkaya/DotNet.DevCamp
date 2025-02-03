@@ -11,7 +11,7 @@ namespace StoreApp.Web.TagHelpers;
 [HtmlTargetElement("div", Attributes = "page-model")]
 public class PageLinkTagHelper : TagHelper
 {
-    private IUrlHelperFactory _urlHelperFactory;
+    private readonly IUrlHelperFactory _urlHelperFactory;
     public PageLinkTagHelper(IUrlHelperFactory urlHelperFactory)
     {
         _urlHelperFactory = urlHelperFactory;

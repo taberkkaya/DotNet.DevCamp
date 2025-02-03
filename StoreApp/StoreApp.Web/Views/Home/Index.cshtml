@@ -1,8 +1,8 @@
 @model ProductListViewModel
 
-<div class="row">
+<div class="row g-2">
     <div class="col-md-3">
-        Kategoriler
+        <vc:categories-list />
     </div>
     <div class="col-md-9">
         @if (Model.Products.Count() == 0)
@@ -25,7 +25,11 @@
             </div>
         }
 
-        <div page-model="@Model.PageInfo" page-action="Index" page-class="btn" page-class-link="btn-outline-secondary"
-            page-class-active="btn-secondary" class="btn-group my-2"></div>
+        @if (Model.PageInfo.TotalPages > 1)
+        {
+            <div page-model="@Model.PageInfo" page-action="Index" page-class="btn" page-class-link="btn-outline-secondary"
+                page-class-active="btn-secondary" class="btn-group my-2"></div>
+        }
+
     </div>
 </div>

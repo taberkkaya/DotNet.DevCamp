@@ -1,6 +1,8 @@
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\bin\Debug\net8.0\StoreApp.Data.deps.json
+C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\bin\Debug\net8.0\StoreApp.Data.runtimeconfig.json
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\bin\Debug\net8.0\StoreApp.Data.dll
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\bin\Debug\net8.0\StoreApp.Data.pdb
+C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\StoreApp.Data.csproj.AssemblyReference.cache
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\StoreApp.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\StoreApp.Data.AssemblyInfoInputs.cache
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\StoreApp.Data.AssemblyInfo.cs
@@ -9,7 +11,5 @@ C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\Sto
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\StoreApp.Data.dll
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\refint\StoreApp.Data.dll
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\StoreApp.Data.pdb
-C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\ref\StoreApp.Data.dll
-C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\bin\Debug\net8.0\StoreApp.Data.runtimeconfig.json
-C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\StoreApp.Data.csproj.AssemblyReference.cache
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\StoreApp.Data.genruntimeconfig.cache
+C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Data\obj\Debug\net8.0\ref\StoreApp.Data.dll
