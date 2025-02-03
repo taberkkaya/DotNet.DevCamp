@@ -1,0 +1,21 @@
+@* @page "/Personel/{id}" *@
+@page "{id}"
+@model DetailsModel
+
+<h1>Details Page</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="~/img/@Model.Employee.Photo" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Employee.Name</h5>
+                <div class="card-text">
+                    <p>@Model.Employee.Email</p>
+                    <p>@Model.Employee.Department</p>
+                </div>
+                <a asp-page="/Employees/Index" class="btn btn-primary">Return Index</a>
+            </div>
+        </div>
+    </div>
+</div>
