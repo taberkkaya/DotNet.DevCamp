@@ -6,6 +6,7 @@ using StoreApp.Web.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
 
@@ -34,5 +35,7 @@ app.MapControllerRoute(
     );
 
 app.MapDefaultControllerRoute();
+
+app.MapRazorPages();
 
 app.Run();
