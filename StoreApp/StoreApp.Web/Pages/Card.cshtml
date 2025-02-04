@@ -1,3 +1,52 @@
-@page
+﻿@page
+@model CardModel
 
-<h1> Card Page </h1>
+<h2>Alışveriş Sepeti</h2>
+@if (Model?.Card?.Items.Count() == 0)
+{
+    <div class="alert alert-warning">Sepette ürün bulunmamaktadır.</div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model?.Card?.Items ?? Enumerable.Empty<CardItem>())
+            {
+                <tr>
+                    <td>@item.Quantity</td>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Product.Price</td>
+                    <td>
+                        @((item.Quantity * item.Product.Price).ToString()) ₺
+                    </td>
+                    <td>
+                        <form asp-page-handler="Remove" method="post">
+                            <input type="hidden" name="id" value="@item.Product.Id">
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total:</td>
+                <td>
+                    @Model?.Card?.CalculateTotal() ₺
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+}
+<div>
+    <a class="btn btn-primary" href="/">Alışverişe Devam Et</a>
+</div>
