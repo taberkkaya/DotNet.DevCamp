@@ -20,6 +20,9 @@ builder.Services.AddScoped<IStoreRepository, EfStoreRepository>();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
 
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped<Card>(sc => SessionCard.GetCard(sc));
+
 var app = builder.Build();
 
 app.UseStaticFiles();

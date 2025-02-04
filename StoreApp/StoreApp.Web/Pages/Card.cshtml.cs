@@ -9,14 +9,15 @@ namespace StoreApp.Web.Pages
     public class CardModel : PageModel
     {
         private IStoreRepository _repository;
-        public CardModel(IStoreRepository repository)
+        public CardModel(IStoreRepository repository, Card cartService)
         {
             _repository = repository;
+            Card = cartService;
         }
         public Card? Card { get; set; }
         public void OnGet()
         {
-            Card = HttpContext.Session.GetJson<Card>("card") ?? new Card();
+
         }
 
         public IActionResult OnPost(int id)
@@ -25,9 +26,7 @@ namespace StoreApp.Web.Pages
 
             if (product != null)
             {
-                Card = HttpContext.Session.GetJson<Card>("card") ?? new Card();
-                Card.AddItem(product, 1);
-                HttpContext.Session.SetJson("card", Card);
+                Card?.AddItem(product, 1);
             }
 
             return RedirectToPage("/Card");
@@ -35,10 +34,7 @@ namespace StoreApp.Web.Pages
 
         public IActionResult OnPostRemove(int id)
         {
-            Card = HttpContext.Session.GetJson<Card>("card") ?? new Card();
-            var product = Card?.Items.First(p => p.Product.Id == id).Product;
-            Card?.RemoveItem(product!);
-            HttpContext.Session.SetJson("card", Card!);
+            Card?.RemoveItem(Card?.Items.First(p => p.Product.Id == id).Product!);
             return RedirectToPage("/Card");
         }
     }

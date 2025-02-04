@@ -1,0 +1,10 @@
+@model Card
+
+@if (Model?.Items.Count() > 0)
+{
+    <a href="/Card" class="btn btn-sm btn-warning">Sepete Git</a>
+    <small class="text-white">
+        @Model?.Items.Sum(i => i.Quantity) adet ürün.
+        [@Model?.CalculateTotal()]
+    </small>
+}
