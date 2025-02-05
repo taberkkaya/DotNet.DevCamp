@@ -132,3 +132,5 @@ C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\obj\Debug\net8.0\refi
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\obj\Debug\net8.0\StoreApp.Web.pdb
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\obj\Debug\net8.0\StoreApp.Web.genruntimeconfig.cache
 C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\obj\Debug\net8.0\ref\StoreApp.Web.dll
+C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\bin\Debug\net8.0\Iyzipay.dll
+C:\ProjectCollection\DotNet8.DevCamp\StoreApp\StoreApp.Web\bin\Debug\net8.0\Newtonsoft.Json.dll
